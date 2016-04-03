@@ -2,7 +2,7 @@
 
 /**
  * Secret stuff
- * 
+ *
  * controllers/Welcome.php
  *
  * ------------------------------------------------------------------------
@@ -12,6 +12,7 @@ class Gamma extends Application {
 	function __construct()
 	{
 		parent::__construct();
+		$this->restrict(ROLE_ADMIN);
 	}
 
 	//-------------------------------------------------------------
